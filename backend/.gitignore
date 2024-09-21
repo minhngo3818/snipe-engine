@@ -1,0 +1,18 @@
+# ide
+.indea
+.vscode
+
+# data
+assets/dataset/*
+index_data/*
+cache/*
+
+# environment
+venv/*
+
+# cache
+__pycache__
+
+
+# Docker
+Dockerfile

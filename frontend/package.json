@@ -1,0 +1,32 @@
+{
+  "name": "snipe-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "daisyui": "^4.4.19",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "eslint-plugin-next": "^0.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "latest",
+    "prettier": "^3.1.1",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}

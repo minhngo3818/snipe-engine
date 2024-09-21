@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  client:
+    container_name: snipe-client
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    networks:
+      - snipe
+    depends_on:
+      - server
+
+  server:
+    container_name: snipe-server
+    build: 
+      context: ./server
+      dockerfile: Dockerfile
+    cpus: 4
+    mem_limit: 512M
+    networks: 
+      - snipe
+    volumes:
+      - snipe-data:/data
+
+networks:
+  snipe:
+    driver: bridge
+
+volumes :
+  snipe-data:
+    driver: local
+
+  
+
+
+      
